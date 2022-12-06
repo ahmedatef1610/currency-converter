@@ -93,7 +93,7 @@ export default {
       this.loading = true;
       axios
         .get(
-          `https://free.currconv.com/api/v7/convert?q=${key}&compact=ultra&apiKey=f243738b2501d6621f72`
+          `https://free.currconv.com/api/v7/convert?q=${key}&compact=ultra&apiKey=840b0aa7561b389da785`
         )
         .then(res => {
           this.loading = false;
