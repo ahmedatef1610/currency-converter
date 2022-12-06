@@ -82,7 +82,7 @@ export default {
     getCurrencies() {
       this.currencies = JSON.parse(localStorage.getItem("currencies") || "[]");
       axios
-        .get(`https://free.currconv.com/api/v7/currencies?apiKey=f243738b2501d6621f72`)
+        .get(`https://free.currconv.com/api/v7/currencies?apiKey=840b0aa7561b389da785`)
         .then(res => {
           this.currencies = res.data.results;
           localStorage.setItem("currencies", JSON.stringify(res.data.results));
